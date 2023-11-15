@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Flower Gallery | COMP1073 Client-Side JavaScript</title>
+    <link rel="stylesheet" href="css/gallery.css">
+</head>
+<body>
+    <h1>Flower Gallery</h1>
+    <section id="gallery">
+        <!-- Featured image with a specific filename -->
+        <figure id="featuredImage">
+            <img src="images/flowers-pink-large.jpg" alt="" width="1200" height="800" />
+            <figcaption>Sunflowers in the hamlet Dernekamp</figcaption>
+        </figure>
+
+        <!-- List of thumbnails with specific filenames -->
+        <ul>
+            <li><img src="images/flowers-pink-small.jpg" alt="" width="240" height="160" onclick="showImage('flowers-pink-large.jpg', 'Sunflowers in the hamlet Dernekamp', 'Description of Image 1')" /></li>
+            <li><img src="images/flowers-purple-small.jpg" alt="" width="240" height="160" onclick="showImage('flowers-purple-large.jpg', 'Poppies in cornfield', 'Description of Image 2')" /></li>
+            <li><img src="images/flowers-red-small.jpg" alt="" width="240" height="160" onclick="showImage('flowers-red-large.jpg', 'Daffodils in Sentmaring park', 'Description of Image 3')" /></li>
+            <li><img src="images/flowers-white-small.jpg" alt="" width="240" height="160" onclick="showImage('flowers-white-large.jpg', 'Sentmaring Park', 'Description of Image 4')" /></li>
+            <li><img src="images/flowers-yellow-small.jpg" alt="" width="240" height="160" onclick="showImage('flowers-yellow-large.jpg', 'Market in Münster', 'Description of Image 5')" /></li>
+        </ul>
+		
+		
+    </section>
+    <script src="js/gallery.js"></script>
+</body>
+</html>
